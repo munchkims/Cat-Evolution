@@ -45,8 +45,13 @@ public class ComboManager : MonoBehaviour
         if (!isMatchFound)
         {
             Debug.Log("Womp Womp");
-            spriteManager.ResetSprite();
+            ResSprite(); // later it will be a different function to show a normal cat
         }
+    }
+
+    public void ResSprite()
+    {
+        spriteManager.ResetSprite();
     }
 
 }
