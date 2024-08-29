@@ -38,6 +38,9 @@ public class LibraryManager : MonoBehaviour
         {
             slot._img.sprite = slotSprite;
             slot._text.text = slotName;
+            slot.isSolved = true;
+            //check if everything is solved
+            CheckIfCompleted();
         }
         else
         {
@@ -45,12 +48,32 @@ public class LibraryManager : MonoBehaviour
         }
     }
 
+    private void CheckIfCompleted()
+    {
+        bool AllAreTrue = true;
+
+        foreach (ImageSlot slot in slotsList)
+        {
+            if (!slot.isSolved)
+            {
+                AllAreTrue = false;
+                break;
+            }
+        }
+
+        if (AllAreTrue)
+        {
+            Debug.Log("Game Finished!");
+        }
+    }
+
 }
 
 [System.Serializable]
-public struct ImageSlot
+public class ImageSlot
 {
     public string _name;
     public Image _img;
     public TextMeshProUGUI _text;
+    public bool isSolved;
 }

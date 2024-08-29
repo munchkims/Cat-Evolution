@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [Serializable]
-public struct NamedSprite
+public class NamedSprite
 {
     public string _name;
     public Sprite _sprite;
