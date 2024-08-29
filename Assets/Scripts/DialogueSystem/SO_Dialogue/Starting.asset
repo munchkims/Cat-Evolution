@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueParts:
   - line: Hello!
-    emotion: 0
+    emotion: 1
   - line: Happy to see you here!
-    emotion: 3
-  - line: I need to evolve all cats.
     emotion: 2
+  - line: I need to evolve all cats.
+    emotion: 3

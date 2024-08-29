@@ -328,7 +328,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 650, y: -459}
+  m_AnchoredPosition: {x: 430, y: -438}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &28535333
@@ -4396,6 +4396,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 786665586}
   m_CullTransparentMesh: 1
+--- !u!1 &852910640 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3988609014449839358, guid: b0dfbaf0134194b61ab6de685cd3c8ce, type: 3}
+  m_PrefabInstance: {fileID: 1352029359}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &852910643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 852910640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27467800dab81a24a8bf547fa8056096, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &910869323
 GameObject:
   m_ObjectHideFlags: 0
@@ -4733,12 +4750,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -4788,8 +4805,8 @@ RectTransform:
   - {fileID: 1174262122}
   - {fileID: 1816088047}
   - {fileID: 1564781118}
-  - {fileID: 2013463739}
   - {fileID: 719774996}
+  - {fileID: 2013463739}
   - {fileID: 2004842074}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4798,6 +4815,57 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1073515270
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1073515271}
+  - component: {fileID: 1073515272}
+  m_Layer: 0
+  m_Name: StoryManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1073515271
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073515270}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.9582048, y: 0.2531649, z: 6.1131144}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1073515272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073515270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a71e82b421c73b448b50d380bd672919, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  storyParts:
+  - lines: {fileID: 11400000, guid: 0403e0c0103ac534b9721598aba7e95b, type: 2}
+    _name: Charizard
+  - lines: {fileID: 11400000, guid: bd023973a9b0b0a469a37bd83b47051b, type: 2}
+    _name: Pikachu
+  - lines: {fileID: 11400000, guid: 09666237cfc804443bb1e28670257fc9, type: 2}
+    _name: Wizard
 --- !u!1 &1080326946
 GameObject:
   m_ObjectHideFlags: 0
@@ -5987,7 +6055,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -305}
+  m_AnchoredPosition: {x: -165, y: -305}
   m_SizeDelta: {x: 1538.07, y: 376.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1333335286
@@ -6028,6 +6096,90 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1333335284}
   m_CullTransparentMesh: 1
+--- !u!1001 &1352029359
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1222662128589287350, guid: b0dfbaf0134194b61ab6de685cd3c8ce, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1222662128589287350, guid: b0dfbaf0134194b61ab6de685cd3c8ce, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1222662128589287350, guid: b0dfbaf0134194b61ab6de685cd3c8ce, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1222662128589287350, guid: b0dfbaf0134194b61ab6de685cd3c8ce, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 1222662128589287350, guid: b0dfbaf0134194b61ab6de685cd3c8ce, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -11.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1222662128589287350, guid: b0dfbaf0134194b61ab6de685cd3c8ce, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 86.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 1222662128589287350, guid: b0dfbaf0134194b61ab6de685cd3c8ce, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1222662128589287350, guid: b0dfbaf0134194b61ab6de685cd3c8ce, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1222662128589287350, guid: b0dfbaf0134194b61ab6de685cd3c8ce, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1222662128589287350, guid: b0dfbaf0134194b61ab6de685cd3c8ce, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1222662128589287350, guid: b0dfbaf0134194b61ab6de685cd3c8ce, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1222662128589287350, guid: b0dfbaf0134194b61ab6de685cd3c8ce, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -180
+      objectReference: {fileID: 0}
+    - target: {fileID: 1222662128589287350, guid: b0dfbaf0134194b61ab6de685cd3c8ce, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3988609014449839358, guid: b0dfbaf0134194b61ab6de685cd3c8ce, type: 3}
+      propertyPath: m_Name
+      value: Scientist
+      objectReference: {fileID: 0}
+    - target: {fileID: 3988609014449839358, guid: b0dfbaf0134194b61ab6de685cd3c8ce, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4236527069798208167, guid: b0dfbaf0134194b61ab6de685cd3c8ce, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 4169868512bbd9845ae40e115c5b3521, type: 2}
+    m_RemovedComponents:
+    - {fileID: 5114196117060215373, guid: b0dfbaf0134194b61ab6de685cd3c8ce, type: 3}
+    - {fileID: 1043739902173975467, guid: b0dfbaf0134194b61ab6de685cd3c8ce, type: 3}
+    - {fileID: 3051967880070680831, guid: b0dfbaf0134194b61ab6de685cd3c8ce, type: 3}
+    - {fileID: 6612274183773074126, guid: b0dfbaf0134194b61ab6de685cd3c8ce, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3988609014449839358, guid: b0dfbaf0134194b61ab6de685cd3c8ce, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 852910643}
+  m_SourcePrefab: {fileID: 100100000, guid: b0dfbaf0134194b61ab6de685cd3c8ce, type: 3}
 --- !u!1 &1354050324
 GameObject:
   m_ObjectHideFlags: 0
@@ -8588,18 +8740,21 @@ MonoBehaviour:
       plant: 1
       element: 4
     name: Wizard
+    isFound: 0
   - combination:
       mammal: 1
       anthropod: 1
       plant: 3
       element: 3
     name: Pikachu
+    isFound: 0
   - combination:
       mammal: 3
       anthropod: 2
       plant: 1
       element: 1
     name: Charizard
+    isFound: 0
   mammalClass: {fileID: 753957596}
   anthropodClass: {fileID: 1716558239}
   plantClass: {fileID: 27968727}
@@ -9221,6 +9376,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 210958209}
   dialogueBox: {fileID: 490462108}
+  avatar: {fileID: 852910640}
   typeSpeed: 2
 --- !u!1 &2013463738
 GameObject:
@@ -9602,5 +9758,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 519420032}
   - {fileID: 957776615}
+  - {fileID: 1352029359}
   - {fileID: 1547220691}
   - {fileID: 621762045}
+  - {fileID: 1073515271}

@@ -36,7 +36,16 @@ public class ComboManager : MonoBehaviour
                 isMatchFound = true;
                 // set correct sprite and do all this logic for the book as well
                 spriteManager.SetSprite(validCombo.name);
-                //update ui text as well
+                //TODO update ui text as well
+                if (validCombo.isFound == true)
+                {
+                    AlreadyFound();
+                    return;
+                }
+                //play success sound, particles, etc
+                validCombo.isFound = true;
+                //activate dialogue relating to the match through dialogue manager instance
+                StoryManager.Instance.LaunchStory(validCombo.name);
                 LibraryManager.Instance.UpdateSlot(validCombo.name, spriteManager.GetSprite(validCombo.name));
                 break;
             }
@@ -46,7 +55,13 @@ public class ComboManager : MonoBehaviour
         {
             Debug.Log("Womp Womp");
             ResSprite(); // later it will be a different function to show a normal cat
+            // make a text bubble that shows up with an avatar and says that the DNA got overriden
         }
+    }
+
+    public void AlreadyFound()
+    {
+        Debug.Log("Already found that cat!");
     }
 
     public void ResSprite()

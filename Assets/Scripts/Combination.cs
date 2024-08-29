@@ -28,8 +28,9 @@ public class Combination
 }
 
 [Serializable]
-public struct Combo
+public class Combo
 {
     public Combination combination;
     public string name;
+    public bool isFound;
 }

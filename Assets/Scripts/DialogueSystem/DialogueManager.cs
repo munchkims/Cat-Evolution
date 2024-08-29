@@ -11,6 +11,8 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI dialogueText;
     [SerializeField] GameObject dialogueBox;
     // reference to a narrator GameObj or a class with animator
+    [SerializeField] GameObject avatar;
+    private AnimationController avatarController;
 
     //add typewritereffect
     private string d;
@@ -34,6 +36,8 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue(DialogueLines dialogueLines)
     {
         dialogueBox.SetActive(true);
+        avatar.SetActive(true);
+        avatarController = avatar.GetComponent<AnimationController>();
         StartCoroutine(RunDialogue(dialogueLines, 0));
     }
 
@@ -43,6 +47,21 @@ public class DialogueManager : MonoBehaviour
         {
             //send emotions to control here
             Debug.Log(dialogueLines.dialogueParts[section].emotion);
+            switch (dialogueLines.dialogueParts[section].emotion)
+            {
+                case Emotion.Wave:
+                    avatarController.Wave();
+                    break;
+                case Emotion.Happy:
+                    avatarController.Happy();
+                    break;
+                case Emotion.Sad:
+                    avatarController.Sad();
+                    break;
+                case Emotion.Idle:
+                    break;
+            }
+
             int maxVisibleChars = 0;
             d = dialogueLines.dialogueParts[section].line;
             dialogueText.text = d;
@@ -79,6 +98,7 @@ public class DialogueManager : MonoBehaviour
     {
         dialogueBox.SetActive(false);
         //deactivate avatar
+        avatar.SetActive(false);
         skipLineTriggered = false;
     }
 
@@ -91,8 +111,8 @@ public class DialogueManager : MonoBehaviour
 
 public enum Emotion
 {
-    Idle,
     Sad,
-    Confused,
-    Happy
+    Wave,
+    Happy,
+    Idle
 }
