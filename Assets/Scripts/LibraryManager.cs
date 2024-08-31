@@ -38,6 +38,7 @@ public class LibraryManager : MonoBehaviour
         {
             slot._img.sprite = slotSprite;
             slot._text.text = slotName;
+            slot._description.SetActive(true);
             slot.isSolved = true;
             //check if everything is solved
             CheckIfCompleted();
@@ -75,5 +76,6 @@ public class ImageSlot
     public string _name;
     public Image _img;
     public TextMeshProUGUI _text;
+    public GameObject _description;
     public bool isSolved;
 }

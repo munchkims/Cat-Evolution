@@ -1,35 +1,67 @@
 public enum Mammals
 {
     None,
-    Lion,
-    Zebra,
-    Horse,
-    Goat
+    RedPanda,
+    BrownBear,
+    Quokka,
+    Elephant,
+    Porcupine,
+    Goat,
+    Orca,
+    Donkey,
+    Bat,
+    Giraffe,
+    Walrus,
+    Chimpanzee
 }
 
 public enum Anthropods
 {
     None,
+    Earwig,
     Wasp,
-    Scorpion,
     Butterfly,
-    Ant
+    Scorpion,
+    RhinoBeetle,
+    Ant,
+    Dragonfly,
+    Mantis,
+    Centipede,
+    Mosquito,
+    Tarantula,
+    Moth
 }
 
 public enum Plants
 {
     None,
-    Rose,
-    Lily,
+    Basil,
+    Dandelion,
+    Calathea,
     Cactus,
-    Cucumber
+    Fern,
+    Pothos,
+    Lily,
+    Poppy,
+    Flytrap,
+    Cucumber,
+    Onion,
+    Ginger
 }
 
 public enum Alchemy
 {
     None,
+    Mercury,
+    Salt,
+    Sulphur,
     Fire,
+    Air,
     Water,
-    Wind,
-    Earth
+    Earth,
+    Silver,
+    Lead,
+    Copper,
+    Gold,
+    Iron
 }

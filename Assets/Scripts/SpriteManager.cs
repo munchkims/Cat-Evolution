@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class SpriteManager : MonoBehaviour
 {
     [SerializeField] List<NamedSprite> ItemSprites;
+    [SerializeField] Sprite defaultSprite;
     private Image _image;
     private Dictionary<string, Sprite> spriteDict;
 
@@ -49,6 +50,6 @@ public class SpriteManager : MonoBehaviour
 
     public void ResetSprite()
     {
-        _image.sprite = null;
+        _image.sprite = defaultSprite;
     }
 }

@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ComboManager : MonoBehaviour
 {
@@ -9,6 +11,8 @@ public class ComboManager : MonoBehaviour
     [SerializeField] AnthropodClass anthropodClass;
     [SerializeField] PlantClass plantClass;
     [SerializeField] AlchemyClass alchemyClass;
+    [SerializeField] GameObject textPanel;
+    [SerializeField] TextMeshProUGUI catName;
 
     private SpriteManager spriteManager;
     private bool isMatchFound;
@@ -37,6 +41,8 @@ public class ComboManager : MonoBehaviour
                 // set correct sprite and do all this logic for the book as well
                 spriteManager.SetSprite(validCombo.name);
                 //TODO update ui text as well
+                catName.text = validCombo.name;
+                textPanel.SetActive(true);
                 if (validCombo.isFound == true)
                 {
                     AlreadyFound();
@@ -54,7 +60,7 @@ public class ComboManager : MonoBehaviour
         if (!isMatchFound)
         {
             Debug.Log("Womp Womp");
-            ResSprite(); // later it will be a different function to show a normal cat
+            NormalCat(); // later it will be a different function to show a normal cat
             // make a text bubble that shows up with an avatar and says that the DNA got overriden
         }
     }
@@ -64,8 +70,16 @@ public class ComboManager : MonoBehaviour
         Debug.Log("Already found that cat!");
     }
 
+    public void NormalCat()
+    {
+        Debug.Log("Normal cat evoled!");
+        catName.text = "Ordinary Cat";
+        textPanel.SetActive(true);
+    }
+
     public void ResSprite()
     {
+        textPanel.SetActive(false);
         spriteManager.ResetSprite();
     }
 
