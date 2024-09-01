@@ -14,6 +14,7 @@ public class ComboManager : MonoBehaviour
     [SerializeField] AlchemyClass alchemyClass;
     [SerializeField] GameObject textPanel;
     [SerializeField] TextMeshProUGUI catName;
+    [SerializeField] string[] normalCats;
 
     private SpriteManager spriteManager;
     private bool isMatchFound;
@@ -134,14 +135,21 @@ public class ComboManager : MonoBehaviour
 
     public void NormalCat()
     {
-        Debug.Log("Normal cat evoled!");
+        //Debug.Log("Normal cat evoled!");
         catName.text = "Ordinary Cat";
+        RandomCatSprite();
         textPanel.SetActive(true);
         if (!normalFirstFind)
         {
             normalFirstFind = true;
             StoryManager.Instance.LaunchStory("NormalCat");
         }
+    }
+
+    private void RandomCatSprite()
+    {
+        int i = Random.Range(0, normalCats.Length);
+        spriteManager.SetSprite(normalCats[i]);
     }
 
     public void ResSprite()
