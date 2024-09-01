@@ -25,6 +25,16 @@ public class Combination
     {
         return mammal == other.mammal && anthropod == other.anthropod && plant == other.plant && element == other.element;
     }
+
+    public int CheckForMistakes(Combination other)
+    {
+        int i = 0;
+        if (mammal == other.mammal) { i++; }
+        if (anthropod == other.anthropod) { i++; };
+        if (plant == other.plant) { i++; }
+        if (element == other.element) { i++; }
+        return i;
+    }
 }
 
 [Serializable]

@@ -10900,7 +10900,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   storyParts:
   - lines: {fileID: 11400000, guid: 0403e0c0103ac534b9721598aba7e95b, type: 2}
-    _name: Charizard
+    _name: NormalCat
   - lines: {fileID: 11400000, guid: bd023973a9b0b0a469a37bd83b47051b, type: 2}
     _name: Pikachu
   - lines: {fileID: 11400000, guid: 09666237cfc804443bb1e28670257fc9, type: 2}
@@ -11094,7 +11094,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.78039217}
+  m_Color: {r: 0.3679245, g: 0.3679245, b: 0.3679245, a: 0.78039217}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -11451,7 +11451,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.5283019, g: 0.39851028, b: 0.34140262, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

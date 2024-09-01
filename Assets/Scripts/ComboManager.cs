@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Linq;
 
 public class ComboManager : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class ComboManager : MonoBehaviour
 
     private SpriteManager spriteManager;
     private bool isMatchFound;
+    private bool normalFirstFind = false;
+    private List<int> trueAnswers = new List<int>();
 
     private void Awake()
     {
@@ -29,6 +32,12 @@ public class ComboManager : MonoBehaviour
         Anthropods thisAnthropod = anthropodClass.currentInsect;
         Plants thisPlant = plantClass.currentPlant;
         Alchemy thisElement = alchemyClass.currentElement;
+
+        if (!CheckIfFilled(thisMammal, thisAnthropod, thisPlant, thisElement))
+        {
+            HandleNotFilled();
+            return;
+        }
 
         Combination thisCombination = new Combination(thisMammal, thisAnthropod, thisPlant, thisElement);
 
@@ -55,14 +64,58 @@ public class ComboManager : MonoBehaviour
                 LibraryManager.Instance.UpdateSlot(validCombo.name, spriteManager.GetSprite(validCombo.name));
                 break;
             }
+            else
+            {
+                int i = validCombo.combination.CheckForMistakes(thisCombination);
+                trueAnswers.Add(i);
+            }
         }
 
         if (!isMatchFound)
         {
             Debug.Log("Womp Womp");
+            int i = trueAnswers.Max();
+            // we will send different messages to the text bubble and play animation
+            switch (i)
+            {
+                case 0:
+                    Debug.Log("I think we are way off...");
+                    break;
+                case 1:
+                    Debug.Log("I think one of them might be right");
+                    break;
+                case 2:
+                    Debug.Log("I'm pretty sure we are halfway there");
+                    break;
+                case 3:
+                    Debug.Log("Aw man, I was sure we were right! I think we missed just one");
+                    break;
+                case 4:
+                    Debug.LogWarning("You shouldn't see this code");
+                    break;
+            }
+            trueAnswers.Clear();
             NormalCat(); // later it will be a different function to show a normal cat
             // make a text bubble that shows up with an avatar and says that the DNA got overriden
         }
+    }
+
+    private bool CheckIfFilled(Mammals mammal, Anthropods anthropod, Plants plant, Alchemy element)
+    {
+        if (mammal == Mammals.None || anthropod == Anthropods.None || plant == Plants.None || element == Alchemy.None)
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
+
+    private void HandleNotFilled()
+    {
+        Debug.Log("You need to fill all four slots!");
+        // make text pop up
     }
 
     public void AlreadyFound()
@@ -75,6 +128,11 @@ public class ComboManager : MonoBehaviour
         Debug.Log("Normal cat evoled!");
         catName.text = "Ordinary Cat";
         textPanel.SetActive(true);
+        if (!normalFirstFind)
+        {
+            normalFirstFind = true;
+            StoryManager.Instance.LaunchStory("NormalCat");
+        }
     }
 
     public void ResSprite()
