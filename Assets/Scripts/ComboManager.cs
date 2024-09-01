@@ -57,7 +57,7 @@ public class ComboManager : MonoBehaviour
                     AlreadyFound();
                     return;
                 }
-                //play success sound, particles, etc
+                //play success sound, particles, etc - this is all through Coroutine
                 validCombo.isFound = true;
                 //activate dialogue relating to the match through dialogue manager instance
                 StoryManager.Instance.LaunchStory(validCombo.name);
@@ -71,7 +71,12 @@ public class ComboManager : MonoBehaviour
             }
         }
 
-        if (!isMatchFound)
+        if (!isMatchFound && !normalFirstFind)
+        {
+            NormalCat();
+            return;
+        }
+        if (!isMatchFound && normalFirstFind)
         {
             Debug.Log("Womp Womp");
             int i = trueAnswers.Max();
@@ -79,16 +84,20 @@ public class ComboManager : MonoBehaviour
             switch (i)
             {
                 case 0:
-                    Debug.Log("I think we are way off...");
+                    //Debug.Log("I think we are way off...");
+                    PopUpController.Instance.ShowBubble("I think we are way off...");
                     break;
                 case 1:
-                    Debug.Log("I think one of them might be right");
+                    //Debug.Log("I think one of them might be right");
+                    PopUpController.Instance.ShowBubble("I think one of them might be right!");
                     break;
                 case 2:
-                    Debug.Log("I'm pretty sure we are halfway there");
+                    //Debug.Log("I'm pretty sure we are halfway there");
+                    PopUpController.Instance.ShowBubble("I'm pretty sure we are halfway there!");
                     break;
                 case 3:
-                    Debug.Log("Aw man, I was sure we were right! I think we missed just one");
+                    //Debug.Log("Aw man, I was sure we were right! I think we missed just one.");
+                    PopUpController.Instance.ShowBubble("Aw man, I was sure we were right! I think we missed just one.");
                     break;
                 case 4:
                     Debug.LogWarning("You shouldn't see this code");
@@ -114,8 +123,8 @@ public class ComboManager : MonoBehaviour
 
     private void HandleNotFilled()
     {
-        Debug.Log("You need to fill all four slots!");
         // make text pop up
+        PopUpController.Instance.ShowBubble("You need to fill all four slots!");
     }
 
     public void AlreadyFound()
