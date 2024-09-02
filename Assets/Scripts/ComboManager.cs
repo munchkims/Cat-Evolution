@@ -20,6 +20,7 @@ public class ComboManager : MonoBehaviour
     private bool isMatchFound;
     private bool normalFirstFind = false;
     private List<int> trueAnswers = new List<int>();
+    private int hintMeter;
 
     private void Awake()
     {
@@ -81,9 +82,9 @@ public class ComboManager : MonoBehaviour
         if (!isMatchFound && normalFirstFind)
         {
             Debug.Log("Womp Womp");
-            int i = trueAnswers.Max();
+            hintMeter = trueAnswers.Max();
             // we will send different messages to the text bubble and play animation
-            switch (i)
+            /* switch (hintMeter)
             {
                 case 0:
                     //Debug.Log("I think we are way off...");
@@ -104,7 +105,7 @@ public class ComboManager : MonoBehaviour
                 case 4:
                     Debug.LogWarning("You shouldn't see this code");
                     break;
-            }
+            } */
             trueAnswers.Clear();
             NormalCat(); // later it will be a different function to show a normal cat
             // make a text bubble that shows up with an avatar and says that the DNA got overriden
@@ -126,6 +127,7 @@ public class ComboManager : MonoBehaviour
     private void HandleNotFilled()
     {
         // make text pop up
+        AudioManager.Instance.PlayError();
         PopUpController.Instance.ShowBubble("You need to fill all four slots!");
     }
 
@@ -136,15 +138,16 @@ public class ComboManager : MonoBehaviour
 
     public void NormalCat()
     {
+        StartCoroutine(NormalCatRoutine());
         //Debug.Log("Normal cat evoled!");
-        catName.text = "Ordinary Cat";
+        /* catName.text = "Ordinary Cat";
         RandomCatSprite();
         textPanel.SetActive(true);
         if (!normalFirstFind)
         {
             normalFirstFind = true;
             StoryManager.Instance.LaunchStory("NormalCat");
-        }
+        } */
     }
 
     private void RandomCatSprite()
@@ -163,6 +166,7 @@ public class ComboManager : MonoBehaviour
     {
         //lock cursor
         Cursor.lockState = CursorLockMode.Locked;
+        AudioManager.Instance.PlayCombo();
         LiquidController.Instance.UnfillAll();
         yield return new WaitForSeconds(1);
         //shrink down
@@ -182,10 +186,12 @@ public class ComboManager : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
             AlreadyFound();
             LiquidController.Instance.FillAll();
+            AudioManager.Instance.PlayDefaultCat();
             yield break;
         }
         successCombo.isFound = true;
         //play success sound
+        AudioManager.Instance.PlaySuccess();
         //play particles
         //wait for a little bit
         yield return new WaitForSeconds(1f);
@@ -194,8 +200,73 @@ public class ComboManager : MonoBehaviour
         LiquidController.Instance.FillAll();
         //set off story
         StoryManager.Instance.LaunchStory(successCombo.name);
+        yield return new WaitForSeconds(0.5f);
         //update library
         LibraryManager.Instance.UpdateSlot(successCombo.name, spriteManager.GetSprite(successCombo.name));
+    }
+
+    private IEnumerator NormalCatRoutine()
+    {
+        //lock cursor
+        Cursor.lockState = CursorLockMode.Locked;
+        AudioManager.Instance.PlayCombo();
+        LiquidController.Instance.UnfillAll();
+        yield return new WaitForSeconds(1);
+        //shrink down
+        BobbleController.Instance.Shrink();
+        yield return new WaitForSeconds(1f);
+        //change sprite
+        RandomCatSprite();
+        //shrink up
+        BobbleController.Instance.UnShrink();
+        yield return new WaitForSeconds(0.5f);
+        //set name
+        catName.text = "Ordinary Cat";
+        textPanel.SetActive(true);
+        AudioManager.Instance.PlayDefaultCat();
+        //break here if already found and unlock cursor
+        if (normalFirstFind)
+        {
+            AlreadyFound();
+            LiquidController.Instance.FillAll();
+            ShowHint();
+            yield return new WaitForSeconds(1);
+            Cursor.lockState = CursorLockMode.None;
+            yield break;
+        }
+        normalFirstFind = true;
+        yield return new WaitForSeconds(1f);
+        //unlock cursor
+        Cursor.lockState = CursorLockMode.None;
+        LiquidController.Instance.FillAll();
+        //set off story
+        StoryManager.Instance.LaunchStory("NormalCat");
+    }
+
+    private void ShowHint()
+    {
+        switch (hintMeter)
+        {
+            case 0:
+                //Debug.Log("I think we are way off...");
+                PopUpController.Instance.ShowBubble("I think we are way off...");
+                break;
+            case 1:
+                //Debug.Log("I think one of them might be right");
+                PopUpController.Instance.ShowBubble("I think one of them might be right!");
+                break;
+            case 2:
+                //Debug.Log("I'm pretty sure we are halfway there");
+                PopUpController.Instance.ShowBubble("I'm pretty sure we are halfway there!");
+                break;
+            case 3:
+                //Debug.Log("Aw man, I was sure we were right! I think we missed just one.");
+                PopUpController.Instance.ShowBubble("Aw man, I was sure we were right! I think we missed just one.");
+                break;
+            case 4:
+                Debug.LogWarning("You shouldn't see this code");
+                break;
+        }
     }
 
 }

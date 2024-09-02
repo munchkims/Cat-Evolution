@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 269419565a819db46a3faecb6ffaf313, type: 3}
+  m_Name: Yule
+  m_EditorClassIdentifier: 
+  dialogueParts:
+  - line: Oh look! You evolved the Yule Cat!
+    emotion: 2
+  - line: "This cat comes from the Icelandic Christmas folklore and also bears the
+      name J\xF3lak\xF6ttur."
+    emotion: 3
+  - line: It was described as a large malevolent creature
+    emotion: 3
+  - line: "that would either devour people who didn\u2019t receive new clothes for
+      Christmas "
+    emotion: 3
+  - line: or consume their "Christmas bit" (an extra serving of food given to farm
+      residents).
+    emotion: 3
+  - line: Traditionally, the Yule Cat served as both a threat and a motivator for
+      farmworkers
+    emotion: 3
+  - line: to complete the processing of autumn wool before Christmas.
+    emotion: 3
+  - line: 'Those who worked diligently were given new clothes, '
+    emotion: 3
+  - line: while those who didn't would receive nothing and become prey for the Yule
+      Cat.
+    emotion: 3

@@ -14,6 +14,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] AudioClip liquidComboSound;
     [SerializeField] AudioClip successSound;
     [SerializeField] AudioClip defaultCatSound;
+    [SerializeField] AudioClip errorSound;
     private AudioSource audioSource;
 
     private void Awake()
@@ -40,7 +41,7 @@ public class AudioManager : MonoBehaviour
 
     public void PlayTyping()
     {
-        audioSource.PlayOneShot(typingSound);
+        audioSource.PlayOneShot(typingSound, 0.3f);
     }
 
     public void PlayPageTurn()
@@ -71,6 +72,11 @@ public class AudioManager : MonoBehaviour
     public void PlayDefaultCat()
     {
         audioSource.PlayOneShot(defaultCatSound);
+    }
+
+    public void PlayError()
+    {
+        audioSource.PlayOneShot(errorSound);
     }
 
 }

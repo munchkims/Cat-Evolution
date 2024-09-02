@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 269419565a819db46a3faecb6ffaf313, type: 3}
+  m_Name: Final
+  m_EditorClassIdentifier: 
+  dialogueParts:
+  - line: I think that's all of them.
+    emotion: 3
+  - line: Thank you, thank you, thank you!
+    emotion: 2
+  - line: You helped me connect with my ancestor
+    emotion: 3
+  - line: and keep his life work going.
+    emotion: 3
+  - line: Great job on solving all these puzzles!
+    emotion: 2
+  - line: As for now...
+    emotion: 3
+  - line: I will keep on experimenting to see if I can evolve any new species of
+      cats.
+    emotion: 3
+  - line: I hope to make him proud.
+    emotion: 3
+  - line: Thank you once again for helping
+    emotion: 3
+  - line: and I'll see you later!
+    emotion: 1

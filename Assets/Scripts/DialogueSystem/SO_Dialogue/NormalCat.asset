@@ -10,12 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 269419565a819db46a3faecb6ffaf313, type: 3}
-  m_Name: PikaStory
+  m_Name: NormalCat
   m_EditorClassIdentifier: 
   dialogueParts:
-  - line: Heyaaa
-    emotion: 2
-  - line: You found a pika pika chuuuuu
+  - line: Ahh... just a normal cat.
     emotion: 3
-  - line: Good job
+  - line: The extra DNA that we used got overriden.
+    emotion: 3
+  - line: I guess we will have to keep figuring out combinations!
+    emotion: 3
+  - line: At least now we know this one does not work.
     emotion: 3

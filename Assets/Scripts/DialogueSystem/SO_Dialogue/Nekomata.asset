@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 269419565a819db46a3faecb6ffaf313, type: 3}
+  m_Name: Nekomata
+  m_EditorClassIdentifier: 
+  dialogueParts:
+  - line: Oh wow! You evolved Nekomata!
+    emotion: 2
+  - line: This is a famous yokai from the Japanese folklore.
+    emotion: 3
+  - line: 'They start out as regular house cats, '
+    emotion: 3
+  - line: who develop great intelligence and supernatural traits upon reaching a
+      great age.
+    emotion: 3
+  - line: 'If their tail splits it two, they become a Nekomata '
+    emotion: 3
+  - line: and may devour their former owner and take their form.
+    emotion: 3
+  - line: It is believed that Nekomatas only form from very old, large cats with
+      exceptionally long tails.
+    emotion: 3

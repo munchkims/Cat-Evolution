@@ -20,6 +20,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private float typeSpeed;
     [SerializeField] private const float MAX_TYPE_TIME = 0.1f;
     //reference to AudioManager for typingsound
+    public bool DialogueActive { get; private set; }
 
     private void Awake()
     {
@@ -35,6 +36,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(DialogueLines dialogueLines)
     {
+        DialogueActive = true;
         dialogueBox.SetActive(true);
         avatar.SetActive(true);
         avatarController = avatar.GetComponent<AnimationController>();
@@ -77,6 +79,7 @@ public class DialogueManager : MonoBehaviour
                 maxVisibleChars++;
                 dialogueText.maxVisibleCharacters = maxVisibleChars;
                 //typing sound play or emotion sound
+                AudioManager.Instance.PlayTyping();
                 yield return new WaitForSeconds(MAX_TYPE_TIME / typeSpeed);
             }
             dialogueText.maxVisibleCharacters = d.Length;
@@ -100,6 +103,7 @@ public class DialogueManager : MonoBehaviour
         //deactivate avatar
         avatar.SetActive(false);
         skipLineTriggered = false;
+        DialogueActive = false;
     }
 
     public void SkipLine()

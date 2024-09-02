@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 269419565a819db46a3faecb6ffaf313, type: 3}
+  m_Name: Sliver
+  m_EditorClassIdentifier: 
+  dialogueParts:
+  - line: Awesome! You evolved the Sliver Cat!
+    emotion: 2
+  - line: This cat-like creature comes from the North American folklore.
+    emotion: 3
+  - line: It is a large, tree-dwelling feline that weighs around 300 pounds, or 136
+      kgs.
+    emotion: 3
+  - line: It has tasseled ears and eyes with horizontal, instead of vertical, slits.
+    emotion: 3
+  - line: 'Its most notable feature is its eleven-foot-long (around 3,35 meters)
+      tail, '
+    emotion: 3
+  - line: "which is as strong as a boa constrictor\u2019s. "
+    emotion: 3
+  - line: The tail ends in a bony, club-like growth with spikes.
+    emotion: 3
+  - line: As an ambush predator, the Sliver Cat waits in low branches until prey
+      comes by.
+    emotion: 3
+  - line: It first uses the rounded side of its tail to stun the victim
+    emotion: 3
+  - line: and then hooks the spiked side into the prey to drag it up to its nest
+      for eating.
+    emotion: 3

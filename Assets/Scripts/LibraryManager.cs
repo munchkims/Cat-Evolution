@@ -9,6 +9,8 @@ public class LibraryManager : MonoBehaviour
     public static LibraryManager Instance { get; private set; }
     [SerializeField] List<ImageSlot> slotsList;
     private Dictionary<string, ImageSlot> slotsDict;
+    private bool gameFinished;
+    private bool finalDialogueStarted;
 
     private void Awake()
     {
@@ -20,6 +22,15 @@ public class LibraryManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
+        }
+    }
+
+    private void Update()
+    {
+        if (gameFinished && !DialogueManager.Instance.DialogueActive && !finalDialogueStarted)
+        {
+            finalDialogueStarted = true;
+            StartCoroutine(HandleGameFinished());
         }
     }
 
@@ -65,7 +76,21 @@ public class LibraryManager : MonoBehaviour
         if (AllAreTrue)
         {
             Debug.Log("Game Finished!");
+            gameFinished = true;
         }
+    }
+
+    private IEnumerator HandleGameFinished()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        yield return new WaitForSeconds(1);
+        StoryManager.Instance.LaunchStory("FinalDialogue");
+        yield return new WaitForSeconds(0.5f);
+        while (DialogueManager.Instance.DialogueActive)
+        {
+            yield return null;
+        }
+        Debug.Log("Launching Credits");
     }
 
 }

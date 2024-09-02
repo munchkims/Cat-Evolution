@@ -13,9 +13,66 @@ MonoBehaviour:
   m_Name: Starting
   m_EditorClassIdentifier: 
   dialogueParts:
-  - line: Hello!
+  - line: Oh, hello!
     emotion: 1
-  - line: Happy to see you here!
-    emotion: 2
-  - line: I need to evolve all cats.
+  - line: Thank you for answering my call for help.
     emotion: 3
+  - line: I know we only recently became friends,
+    emotion: 3
+  - line: but I feel like I could trust you.
+    emotion: 3
+  - line: I'm extremely relieved that you are here!
+    emotion: 2
+  - line: So... let me explain the situation.
+    emotion: 3
+  - line: I have this distant relative who recently passed away,
+    emotion: 3
+  - line: and since I was his only living relation I got his inheritance.
+    emotion: 3
+  - line: Before you say anything, it's not exactly what you think.
+    emotion: 3
+  - line: 'I don''t really know much about him, '
+    emotion: 3
+  - line: other than the fact that he was really reclusive and kept to himself.
+    emotion: 3
+  - line: As to the inheritance, what recevied is his life's work and a letter vaguely
+      describing it.
+    emotion: 3
+  - line: Turns out, he was into various biological experiments
+    emotion: 3
+  - line: and he kept trying to evolve different feline species.
+    emotion: 3
+  - line: And I think he succeeded!
+    emotion: 2
+  - line: I found some of his notes where he explained the process.
+    emotion: 3
+  - line: "You have to combine three types of DNA \u2014 mammal, plant and arthropod
+      \u2014 and an alchemy element"
+    emotion: 3
+  - line: to evolve a specific cat.
+    emotion: 3
+  - line: However, not everything is as easy as it seems.
+    emotion: 3
+  - line: You see, feline DNA is very strong, and most of the times you just get
+      an ordinary cat as a result.
+    emotion: 3
+  - line: And only with specific combinations you can evolve a cat into a new form.
+    emotion: 3
+  - line: During his life's work, my distant relative managed to evolve only nine
+      new cats.
+    emotion: 3
+  - line: But he kept his work very guarded, so the only clues I have are from the
+      book that he left me.
+    emotion: 3
+  - line: Each hint in the book holds a clue about which combination to choose.
+    emotion: 3
+  - line: And this is where you come in.
+    emotion: 3
+  - line: You've always struck me as very intelligent,
+    emotion: 3
+  - line: and the riddles here have me stumped,
+    emotion: 3
+  - line: so I hope you can help me out.
+    emotion: 3
+  - line: Let's evolve all the cats together!
+    emotion: 2

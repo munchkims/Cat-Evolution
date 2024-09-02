@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 269419565a819db46a3faecb6ffaf313, type: 3}
+  m_Name: Cactus
+  m_EditorClassIdentifier: 
+  dialogueParts:
+  - line: Nice Work! You evolved the Cactus Cat!
+    emotion: 2
+  - line: These creatures come from the American Southwest's folklore.
+    emotion: 3
+  - line: They are described as a bobcat-like animal with thorny cactus-like fur,
+    emotion: 3
+  - line: a branched tail and sharp bones protruding from its legs.
+    emotion: 3
+  - line: In the nineteenth century, cowboys and pioneers told stories of these peculiar
+      animals
+    emotion: 3
+  - line: coming out at night to slash cacti and drink the sap,
+    emotion: 3
+  - line: sometimes even consuming fermented juice from the cacti.
+    emotion: 3
+  - line: Despite their formidable appearance, they were not considered hostile.
+    emotion: 3
+  - line: They were also known for its distinctive and eerie "wail",
+    emotion: 3
+  - line: which could be heard through the dark desert night,
+    emotion: 3
+  - line: along with the sound of its bones rubbing together.
+    emotion: 3

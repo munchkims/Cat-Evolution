@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 269419565a819db46a3faecb6ffaf313, type: 3}
+  m_Name: Kazan
+  m_EditorClassIdentifier: 
+  dialogueParts:
+  - line: Oh wow! You evolved the Kazan Cat!
+    emotion: 2
+  - line: 'The legend of this cat comes from the Russian folklore. '
+    emotion: 3
+  - line: It is linked to Ivan the Terrible's capture of Kazan in 1552.
+    emotion: 3
+  - line: 'Russian allies, the Mari princes, '
+    emotion: 3
+  - line: 'attempted to sneak into the Khan''s quarters at night to capture him and
+      his family. '
+    emotion: 3
+  - line: 'The Khan was saved by a loyal cat named Alabrys, '
+    emotion: 3
+  - line: 'who sensed danger and woke him up. '
+    emotion: 3
+  - line: Using a secret passage, the Khan escaped to Persia.
+    emotion: 3
+  - line: Kazan was eventually conquered and became part of Russia.
+    emotion: 3
+  - line: It was later discovered that the area had a unique
+    emotion: 3
+  - line: 'breed of large, strong cats with broad faces, thick necks, and short tails. '
+    emotion: 3
+  - line: 'The legend of these special Kazan cats persists, '
+    emotion: 3
+  - line: with three monuments dedicated to them in Kazan.
+    emotion: 3

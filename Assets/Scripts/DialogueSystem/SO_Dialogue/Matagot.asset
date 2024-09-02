@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 269419565a819db46a3faecb6ffaf313, type: 3}
+  m_Name: Matagot
+  m_EditorClassIdentifier: 
+  dialogueParts:
+  - line: Awesome! You evolved Matagot!
+    emotion: 2
+  - line: This is a spirit from the French folklore that usually comes in a form
+      of a black cat.
+    emotion: 3
+  - line: Matagots are generally considered malevolent,
+    emotion: 3
+  - line: 'but they can also bring wealth if properly cared for. '
+    emotion: 3
+  - line: To attract such a matagot, one must offer it a fresh, plump chicken
+    emotion: 3
+  - line: and then bring it home without looking back.
+    emotion: 3
+  - line: 'If the cat receives the first bite and sip of food at every meal, '
+    emotion: 3
+  - line: it will reward its owner with a solid gold coin each morning.
+    emotion: 3
+  - line: According to Gascony traditions,
+    emotion: 3
+  - line: you should not keep the matagot for your entire life.
+    emotion: 3
+  - line: If the owner is dying and fails to release the matagot,
+    emotion: 3
+  - line: they will endure extended suffering.
+    emotion: 3
