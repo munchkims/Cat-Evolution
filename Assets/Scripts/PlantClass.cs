@@ -27,5 +27,13 @@ public class PlantClass : MonoBehaviour
         }
 
         spriteManager.SetSprite(typeValue);
+        if (currentPlant == Plants.None)
+        {
+            LiquidController.Instance.FillPlantTube(true);
+        }
+        else
+        {
+            LiquidController.Instance.FillPlantTube(false);
+        }
     }
 }

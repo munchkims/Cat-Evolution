@@ -27,5 +27,13 @@ public class MammalClass : MonoBehaviour
         }
 
         spriteManager.SetSprite(typeValue);
+        if (currentMammal == Mammals.None)
+        {
+            LiquidController.Instance.FillMammalTube(true);
+        }
+        else
+        {
+            LiquidController.Instance.FillMammalTube(false);
+        }
     }
 }

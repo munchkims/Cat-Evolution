@@ -27,5 +27,13 @@ public class AlchemyClass : MonoBehaviour
         }
 
         spriteManager.SetSprite(typeValue);
+        if (currentElement == Alchemy.None)
+        {
+            LiquidController.Instance.FillAlchemyTube(true);
+        }
+        else
+        {
+            LiquidController.Instance.FillAlchemyTube(false);
+        }
     }
 }

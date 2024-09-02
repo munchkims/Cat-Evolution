@@ -48,21 +48,22 @@ public class ComboManager : MonoBehaviour
             {
                 Debug.Log("Success!");
                 isMatchFound = true;
-                // set correct sprite and do all this logic for the book as well
-                spriteManager.SetSprite(validCombo.name);
-                //TODO update ui text as well
-                catName.text = validCombo.name;
-                textPanel.SetActive(true);
-                if (validCombo.isFound == true)
+
+                StartCoroutine(SuccessRoutine(validCombo));
+
+                //spriteManager.SetSprite(validCombo.name);
+                //catName.text = validCombo.name;
+                //textPanel.SetActive(true);
+                /* if (validCombo.isFound == true)
                 {
                     AlreadyFound();
                     return;
-                }
+                } */
                 //play success sound, particles, etc - this is all through Coroutine
-                validCombo.isFound = true;
+                //validCombo.isFound = true;
                 //activate dialogue relating to the match through dialogue manager instance
-                StoryManager.Instance.LaunchStory(validCombo.name);
-                LibraryManager.Instance.UpdateSlot(validCombo.name, spriteManager.GetSprite(validCombo.name));
+                //StoryManager.Instance.LaunchStory(validCombo.name);
+                //LibraryManager.Instance.UpdateSlot(validCombo.name, spriteManager.GetSprite(validCombo.name));
                 break;
             }
             else
@@ -156,6 +157,45 @@ public class ComboManager : MonoBehaviour
     {
         textPanel.SetActive(false);
         spriteManager.ResetSprite();
+    }
+
+    private IEnumerator SuccessRoutine(Combo successCombo)
+    {
+        //lock cursor
+        Cursor.lockState = CursorLockMode.Locked;
+        LiquidController.Instance.UnfillAll();
+        yield return new WaitForSeconds(1);
+        //shrink down
+        BobbleController.Instance.Shrink();
+        yield return new WaitForSeconds(1f);
+        //change sprite
+        spriteManager.SetSprite(successCombo.name);
+        //shrink up
+        BobbleController.Instance.UnShrink();
+        yield return new WaitForSeconds(1f);
+        //set name
+        catName.text = successCombo.name;
+        textPanel.SetActive(true);
+        //break here if already found and unlock cursor
+        if (successCombo.isFound == true)
+        {
+            Cursor.lockState = CursorLockMode.None;
+            AlreadyFound();
+            LiquidController.Instance.FillAll();
+            yield break;
+        }
+        successCombo.isFound = true;
+        //play success sound
+        //play particles
+        //wait for a little bit
+        yield return new WaitForSeconds(1f);
+        //unlock cursor
+        Cursor.lockState = CursorLockMode.None;
+        LiquidController.Instance.FillAll();
+        //set off story
+        StoryManager.Instance.LaunchStory(successCombo.name);
+        //update library
+        LibraryManager.Instance.UpdateSlot(successCombo.name, spriteManager.GetSprite(successCombo.name));
     }
 
 }

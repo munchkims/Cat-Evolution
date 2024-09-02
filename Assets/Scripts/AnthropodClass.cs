@@ -27,5 +27,13 @@ public class AnthropodClass : MonoBehaviour
         }
 
         spriteManager.SetSprite(typeValue);
+        if (currentInsect == Anthropods.None)
+        {
+            LiquidController.Instance.FillInsectTube(true);
+        }
+        else
+        {
+            LiquidController.Instance.FillInsectTube(false);
+        }
     }
 }
