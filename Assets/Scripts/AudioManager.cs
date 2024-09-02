@@ -41,7 +41,7 @@ public class AudioManager : MonoBehaviour
 
     public void PlayTyping()
     {
-        audioSource.PlayOneShot(typingSound, 0.3f);
+        audioSource.PlayOneShot(typingSound, 0.1f);
     }
 
     public void PlayPageTurn()

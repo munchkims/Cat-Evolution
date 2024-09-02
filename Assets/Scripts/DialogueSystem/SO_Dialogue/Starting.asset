@@ -47,9 +47,9 @@ MonoBehaviour:
   - line: I found some of his notes where he explained the process.
     emotion: 3
   - line: "You have to combine three types of DNA \u2014 mammal, plant and arthropod
-      \u2014 and an alchemy element"
+      \u2014 "
     emotion: 3
-  - line: to evolve a specific cat.
+  - line: and an alchemy element to evolve a specific cat.
     emotion: 3
   - line: However, not everything is as easy as it seems.
     emotion: 3
