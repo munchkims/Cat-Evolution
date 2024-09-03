@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueParts:
   - line: Awesome! You evolved Matagot!
-    emotion: 2
+    emotion: 0
   - line: This is a spirit from the French folklore that usually comes in a form
       of a black cat.
     emotion: 3

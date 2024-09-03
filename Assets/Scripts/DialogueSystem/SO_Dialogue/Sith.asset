@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueParts:
   - line: "Oh look! You evolved the Cat-s\xECth!"
-    emotion: 2
+    emotion: 0
   - line: This is a faity creature from the Celtic mythology
     emotion: 3
   - line: that is usually descriped as a black cat with a white spot on its chest.

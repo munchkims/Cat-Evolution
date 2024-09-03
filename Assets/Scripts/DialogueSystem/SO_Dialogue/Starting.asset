@@ -20,7 +20,7 @@ MonoBehaviour:
   - line: I know we only recently became friends,
     emotion: 3
   - line: but I feel like I could trust you.
-    emotion: 3
+    emotion: 0
   - line: I'm extremely relieved that you are here!
     emotion: 2
   - line: So... let me explain the situation.
@@ -67,7 +67,7 @@ MonoBehaviour:
   - line: Each hint in the book holds a clue about which combination to choose.
     emotion: 3
   - line: And this is where you come in.
-    emotion: 3
+    emotion: 0
   - line: You've always struck me as very intelligent,
     emotion: 3
   - line: and the riddles here have me stumped,

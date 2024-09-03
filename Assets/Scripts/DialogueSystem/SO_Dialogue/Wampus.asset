@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueParts:
   - line: No way! You evoled the Wampus Cat!
-    emotion: 2
+    emotion: 0
   - line: This cat comes from the American folkore and it's described to be large
       and panther-like.
     emotion: 3

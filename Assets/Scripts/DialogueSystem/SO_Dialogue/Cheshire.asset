@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueParts:
   - line: Nice work! You evolved the Cheshire Cat!
-    emotion: 2
+    emotion: 0
   - line: 'While the Cheshire Cat was popularized by Lewis Carroll in "Alice''s Adventures
       in Wonderland", '
     emotion: 3
