@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class LibraryManager : MonoBehaviour
 {
     public static LibraryManager Instance { get; private set; }
+    [SerializeField] GameObject credits;
     [SerializeField] List<ImageSlot> slotsList;
     private Dictionary<string, ImageSlot> slotsDict;
     private bool gameFinished;
@@ -83,14 +84,16 @@ public class LibraryManager : MonoBehaviour
     private IEnumerator HandleGameFinished()
     {
         Cursor.lockState = CursorLockMode.Locked;
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(2);
+        Cursor.lockState = CursorLockMode.None;
         StoryManager.Instance.LaunchStory("FinalDialogue");
         yield return new WaitForSeconds(0.5f);
         while (DialogueManager.Instance.DialogueActive)
         {
             yield return null;
         }
-        Debug.Log("Launching Credits");
+        //Debug.Log("Launching Credits");
+        credits.SetActive(true);
     }
 
 }

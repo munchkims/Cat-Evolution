@@ -17,7 +17,17 @@ MonoBehaviour:
     emotion: 3
   - line: The extra DNA that we used got overriden.
     emotion: 3
-  - line: I guess we will have to keep figuring out combinations!
+  - line: I guess we interpreted some of the hints incorrectly.
+    emotion: 3
+  - line: Also, I'm pretty sure that the hints are in no specific order when it comes
+      to four categories...
+    emotion: 3
+  - line: "Meaning, the first line, for example, can refer to any class of the ingredients
+      \u2014"
+    emotion: 3
+  - line: be it mammals, arthropods, plants or alchemy elements.
+    emotion: 3
+  - line: So we will have to keep figuring out combinations!
     emotion: 3
   - line: At least now we know this one does not work.
     emotion: 3

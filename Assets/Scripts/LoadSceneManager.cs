@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class SoundManager : MonoBehaviour
+public class LoadSceneManager : MonoBehaviour
 {
-    public static SoundManager Instance { get; private set; }
-    private AudioSource audioSource;
+    public static LoadSceneManager Instance { get; private set; }
+
     private void Awake()
     {
         if (Instance == null)
@@ -19,9 +20,12 @@ public class SoundManager : MonoBehaviour
         }
     }
 
-    private void Start()
+    public void LoadMainGame()
     {
-        audioSource = GetComponent<AudioSource>();
-        audioSource.Play();
+        SceneManager.LoadScene(1);
+    }
+    public void LoadMainMenu()
+    {
+        SceneManager.LoadScene(0);
     }
 }

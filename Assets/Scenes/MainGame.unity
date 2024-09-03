@@ -2633,6 +2633,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 73401886}
     m_Modifications:
+    - target: {fileID: 324274894958159875, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 333.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 324274894958159875, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -342.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1295227698368396286, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 488719380d70e4d44a717d9e0658cfa7, type: 3}
     - target: {fileID: 1647763053836011168, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 3
@@ -2733,6 +2745,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: SithName
       objectReference: {fileID: 0}
+    - target: {fileID: 2856748116772157462, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 326.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 2856748116772157462, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -340.20016
+      objectReference: {fileID: 0}
+    - target: {fileID: 3664990774363696107, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 477ea23f3ac77254383bf1d0257171d9, type: 3}
     - target: {fileID: 3809594039150581425, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
       propertyPath: m_text
       value: Sith
@@ -2755,6 +2779,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5611650307917841442, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5884627494165558422, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5939199578693601894, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
@@ -2852,6 +2880,20 @@ PrefabInstance:
     - target: {fileID: 6395906258011374066, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -4.9100037
+      objectReference: {fileID: 0}
+    - target: {fileID: 6604111154518781196, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_text
+      value: "\u25E6 Reminds one of rotten eggs\n\u25E6 Short-term sweet, long-term
+        poisonous\n\u25E6 Named after one that does not exist\n\u25E6 Its nickname
+        shows its murderous intent"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6604111154518781196, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_fontSize
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 6604111154518781196, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 6796048540960751165, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -2960,6 +3002,24 @@ PrefabInstance:
     - target: {fileID: 8121364975676667420, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8254920603460084867, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683994584444828953, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_text
+      value: "\u25E6 I prefer the word \"headstrong\"\n\u25E6 Innocent and addictive
+        are the sides of its coin\n\u25E6 Add garlic and a cross for a full set\n\u25E6
+        Not as religious as it seems"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683994584444828953, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_fontSize
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683994584444828953, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 8928361868096033255, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -11663,6 +11723,82 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6183876072744060837, guid: 052915a88445e2c4eb74cb3d454c6f4e, type: 3}
   m_PrefabInstance: {fileID: 1024069397}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1045793747
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1045793748}
+  - component: {fileID: 1045793750}
+  - component: {fileID: 1045793749}
+  m_Layer: 5
+  m_Name: Credits
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1045793748
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1045793747}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1270758915}
+  m_Father: {fileID: 1177133400}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1045793749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1045793747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: a5908a297689682449b8827a4f4f42f6, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1045793750
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1045793747}
+  m_CullTransparentMesh: 1
 --- !u!1 &1073515270
 GameObject:
   m_ObjectHideFlags: 0
@@ -12615,6 +12751,7 @@ RectTransform:
   - {fileID: 1467970664}
   - {fileID: 852910645}
   - {fileID: 500949731}
+  - {fileID: 1045793748}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -13741,6 +13878,139 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1262334026}
   m_CullTransparentMesh: 1
+--- !u!1 &1270758914
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1270758915}
+  - component: {fileID: 1270758917}
+  - component: {fileID: 1270758916}
+  - component: {fileID: 1270758918}
+  - component: {fileID: 1270758919}
+  m_Layer: 5
+  m_Name: Main Menu Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1270758915
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270758914}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1045793748}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -71}
+  m_SizeDelta: {x: 479, y: 215}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1270758916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270758914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 2dc180c9cb3509d42a3de5b1dbf2ea27, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1270758917
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270758914}
+  m_CullTransparentMesh: 1
+--- !u!114 &1270758918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270758914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1270758916}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1270758919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270758914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dc82aa90675a044995bee980c2bfb39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1278390082
 GameObject:
   m_ObjectHideFlags: 0
@@ -16278,6 +16548,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 73401886}
     m_Modifications:
+    - target: {fileID: 1295227698368396286, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 96f7c4de9a33a8848bd7827492f12efc, type: 3}
     - target: {fileID: 1647763053836011168, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 3
@@ -16378,6 +16652,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SliverName
       objectReference: {fileID: 0}
+    - target: {fileID: 3664990774363696107, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2ce2ea2ceee1b9a4284291e499a5455d, type: 3}
     - target: {fileID: 3809594039150581425, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
       propertyPath: m_text
       value: Sliver
@@ -16400,6 +16678,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5611650307917841442, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5884627494165558422, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5939199578693601894, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
@@ -16497,6 +16779,20 @@ PrefabInstance:
     - target: {fileID: 6395906258011374066, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -4.9100037
+      objectReference: {fileID: 0}
+    - target: {fileID: 6604111154518781196, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_text
+      value: "\u25E6 As old as dinosaurs, its flower an enigma\n\u25E6 Big name,
+        small stature\n\u25E6 Blood, sweat and tears have it in common\n\u25E6 Has
+        30000 weapons"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6604111154518781196, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_fontSize
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 6604111154518781196, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 6796048540960751165, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -16605,6 +16901,23 @@ PrefabInstance:
     - target: {fileID: 8121364975676667420, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8254920603460084867, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683994584444828953, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_text
+      value: "\u25E6 Devil's favourite\n\u25E6 Some believe it brings riches\n\u25E6
+        Informant, but without sharing news\n\u25E6 Some go crazy for its glint"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683994584444828953, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_fontSize
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683994584444828953, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 8928361868096033255, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -19773,6 +20086,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65d5f9aef78793e4ea59c56d442d36e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  credits: {fileID: 1045793747}
   slotsList:
   - _name: Nekomata
     _img: {fileID: 1897651612}
@@ -20388,6 +20702,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 73401886}
     m_Modifications:
+    - target: {fileID: 324274894958159875, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 486.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 324274894958159875, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 348.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 324274894958159875, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 324274894958159875, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -355
+      objectReference: {fileID: 0}
+    - target: {fileID: 1295227698368396286, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 043f68d1d2235414eabdcd23b87fc33f, type: 3}
     - target: {fileID: 1331788345781715313, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -20408,6 +20742,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: NekomataName
       objectReference: {fileID: 0}
+    - target: {fileID: 2856748116772157462, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 472.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2856748116772157462, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 356.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2856748116772157462, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 4.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2856748116772157462, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -360.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 3664990774363696107, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 16b95a42475c57040baa7c3427e04c07, type: 3}
     - target: {fileID: 3809594039150581425, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
       propertyPath: m_text
       value: Nekomata
@@ -20536,6 +20890,19 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -4.9100037
       objectReference: {fileID: 0}
+    - target: {fileID: 6604111154518781196, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_text
+      value: "\u25E6 Has wings but cannot use them\n\u25E6 The mortal enemy of cat
+        kind\n\u25E6 Vegetarian carnivore\n\u25E6 Famous for moving backwards"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6604111154518781196, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_fontSize
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 6604111154518781196, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 45
+      objectReference: {fileID: 0}
     - target: {fileID: 6796048540960751165, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 3
@@ -20651,6 +21018,20 @@ PrefabInstance:
     - target: {fileID: 8121364975676667420, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683994584444828953, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_text
+      value: "\u25E6 It can end with fruit, witness or in mind\n\u25E6 A garden of
+        them ceases to be a garden\n\u25E6 The evil relative of the sweet one\n\u25E6
+        Raises debate about its shape"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683994584444828953, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_fontSize
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683994584444828953, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 8928361868096033255, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -20871,6 +21252,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 73401886}
     m_Modifications:
+    - target: {fileID: 1295227698368396286, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a859580de6a93c140b3e1cbcba1b2932, type: 3}
     - target: {fileID: 1647763053836011168, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 3
@@ -20966,6 +21351,22 @@ PrefabInstance:
     - target: {fileID: 2164127726196275203, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
       propertyPath: m_Name
       value: WampusName
+      objectReference: {fileID: 0}
+    - target: {fileID: 2856748116772157462, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 481.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 2856748116772157462, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 326.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 2856748116772157462, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 5.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 2856748116772157462, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -338.55984
       objectReference: {fileID: 0}
     - target: {fileID: 3809594039150581425, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
       propertyPath: m_text
@@ -21075,6 +21476,20 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -4.9100037
       objectReference: {fileID: 0}
+    - target: {fileID: 6604111154518781196, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_text
+      value: "\u25E6 Useful against mosquitos too!\n\u25E6 Indispensable when tamed,
+        destructive when not\n\u25E6 Pretty misleading name, the numbers don't add
+        up\n\u25E6 I wonder if it needs dentures from all the walking"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6604111154518781196, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_fontSize
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 6604111154518781196, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 45
+      objectReference: {fileID: 0}
     - target: {fileID: 6755928553953049153, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
       propertyPath: m_SizeDelta.x
       value: 245.91
@@ -21097,6 +21512,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8121364975676667420, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8254920603460084867, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8928361868096033255, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
@@ -23140,6 +23559,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 73401886}
     m_Modifications:
+    - target: {fileID: 1295227698368396286, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 973e024193a556a4aa7ce9fd33daa19a, type: 3}
     - target: {fileID: 1295235395182733998, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.9997113
@@ -23264,6 +23687,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2856748116772157462, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 466.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 2856748116772157462, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 329.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 2856748116772157462, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.000012398
+      objectReference: {fileID: 0}
+    - target: {fileID: 2856748116772157462, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -336
+      objectReference: {fileID: 0}
+    - target: {fileID: 3664990774363696107, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: bc14055325eec5f4aa100da1f8442e73, type: 3}
     - target: {fileID: 3809594039150581425, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
       propertyPath: m_text
       value: Cheshire
@@ -23290,6 +23733,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5611650307917841442, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5884627494165558422, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5939199578693601894, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
@@ -23387,6 +23834,20 @@ PrefabInstance:
     - target: {fileID: 6395906258011374066, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -4.9100037
+      objectReference: {fileID: 0}
+    - target: {fileID: 6604111154518781196, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_text
+      value: "\u25E6 Its effect has big consequences\n\u25E6 Makes the sound but
+        always silent\n\u25E6 Reminds me of a certain equine\n\u25E6 Famous for its
+        smile"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6604111154518781196, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_fontSize
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 6604111154518781196, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 6755928553953049153, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
       propertyPath: m_SizeDelta.x
@@ -23511,6 +23972,23 @@ PrefabInstance:
     - target: {fileID: 8121364975676667420, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8254920603460084867, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683994584444828953, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_text
+      value: "\u25E6 Very good memory\n\u25E6 Stung its quacking transport and met
+        its doom\n\u25E6 Good defense, but never attacks\n\u25E6 Will, mine, grip"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683994584444828953, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_fontSize
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683994584444828953, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 8928361868096033255, guid: c1ae22bb5c768074fb19cc98212bb6e1, type: 3}
       propertyPath: m_AnchoredPosition.x
